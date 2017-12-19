@@ -1,3 +1,24 @@
-<mat-form-field>
-  <input matInput placeholder="Placeholder">
-</mat-form-field>
+<mat-card>
+  <mat-card-title>Submit A Movie Review</mat-card-title>
+  <mat-form-field>
+    <input matInput type="text" placeholder="Header Image URL"><mat-icon matSuffix>link</mat-icon>
+  </mat-form-field>
+  <mat-card-subtitle>Main Body</mat-card-subtitle>
+  <mat-form-field>
+    <input matInput type="text" placeholder="Post Title"><mat-icon matSuffix>title</mat-icon>
+  </mat-form-field>
+  <mat-form-field>
+    <textarea matInput placeholder="Review Opening"></textarea><mat-icon matSuffix>text_fields</mat-icon>
+  </mat-form-field>
+  <span>Add Section</span><button mat-raised-button color="accent"><mat-icon>add</mat-icon></button>
+  <mat-card-subtitle>Verdict</mat-card-subtitle>
+  <div>
+    <mat-form-field class="numberInput">
+      <input matInput type="number" name="rating" min="1" max="100"><i matSuffix>%</i>
+      <mat-hint align="start"><strong>Rating out of 100</strong> </mat-hint>
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+  </div>
+</mat-card>

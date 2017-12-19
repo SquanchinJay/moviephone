@@ -1,0 +1,18 @@
+
+
+mat-card {
+    width: 80%;
+    margin: 28px auto;
+}
+
+mat-form-field {
+    width: 80%;
+}
+mat-form-field.numberInput {
+    width: 120px;
+}
+
+button {
+    display: block;
+    margin: 0 0 20px 0;
+}
